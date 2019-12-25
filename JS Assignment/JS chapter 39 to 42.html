@@ -1,0 +1,48 @@
+<html>
+    <head>
+        
+        <title> JS chapter 1,2,3 </title>
+
+    </head>
+
+    <body>
+
+        <script type="text/javascript">
+
+            var sum=0
+            var totalMarks=500;
+
+		    for(var i=1; i<=5; i++){
+
+                sum=sum+parseInt(prompt("Enter Subject "+i+" Marks"));
+            }
+
+            var percentage=parseInt(sum*100/totalMarks);
+            
+
+            switch(true){
+                case percentage>=90 && percentage<=100:
+                    alert("Grade A+");
+                    break;
+                case percentage>=75 && percentage<90:
+                    alert("Grade A");
+                    break;
+                case percentage>=60 && percentage<75:
+                    alert("Grade B");
+                    break;
+                case percentage>=45 && percentage<60:
+                    alert("Grade C");
+                    break;
+                case percentage>=30 && percentage<45:
+                    alert("Grade D");
+                    break;    
+                default:
+                    alert("Grade F");
+                    break;  
+            }
+
+        </script>
+        
+    </body>
+
+</html>

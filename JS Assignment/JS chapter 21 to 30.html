@@ -1,0 +1,48 @@
+<html>
+    <head>
+        
+        <title> JS chapter 21 to 30 </title>
+
+    </head>
+
+    <body>
+
+        <script type="text/javascript">
+
+            var input=parseFloat(prompt("Enter number in decimal:"));
+            input=parseInt(Math.ceil(input));
+
+            var text="This is my dummy text";
+
+            sliceText=text.slice(0,input);
+
+            var rev="";
+
+            for(var i=0; i<input; i++){
+
+                rev=rev+sliceText[input-1-i];
+
+            }
+
+            console.log(rev);
+
+        </script>
+
+        <script type="text/javascript">
+        
+            var inputValue=prompt("Enter sentence:");
+            inputValue=inputValue.toLowerCase().split(" ");
+            
+            for(var i=0; i<inputValue.length; i++){
+                inputValue[i]=inputValue[i][0].toUpperCase() + inputValue[i].slice(1);
+            }
+
+            inputValue=inputValue.join(" ");
+            console.log(inputValue);
+           
+        
+        </script>
+        
+    </body>
+
+</html>

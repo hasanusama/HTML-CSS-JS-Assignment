@@ -1,0 +1,54 @@
+<html>
+    <head>
+        
+        <title> JS chapter 31 to 34 </title>
+
+    </head>
+
+    <body>
+
+        <script type="text/javascript">
+
+            var name= prompt("Enter your Name:");
+            var DOB= new Date(0);
+            DOB.setDate(prompt("Enter your Birthday date:"));
+            DOB.setMonth(prompt("Enter your Birthday month:")-1);
+            DOB.setFullYear(prompt("Enter your Birthday year:"));
+
+            var time=new Date();
+            if((time.getHours()>=6) && (time.getHours()<12)){
+                console.log("Hello "+ name + ", Morning");
+            }
+            else if((time.getHours()>=12) && (time.getHours()<17)){
+                console.log("Hello "+ name + ", Good Afternoon" );
+            }
+            else if((time.getHours()>=17) && (time.getHours()<20)){
+                console.log("Hello "+ name + ", Good Evening");
+            }
+            else{
+                console.log("Hello "+ name + ", Good Night");
+            }
+            
+            console.log("Your DOB is "+DOB);
+
+
+            var timediff=time.getTime()-DOB.getTime();
+            console.log("You are "+ Math.floor((timediff/(1000*60*60*24*365)))+ " Years old");
+            console.log("You age in days "+ Math.floor((timediff/(1000*60*60*24))));
+            console.log("You age in hours "+ Math.floor((timediff/(1000*60*60))));
+
+            var nextBd=new Date(time.getFullYear(),DOB.getMonth(),DOB.getDate());
+
+            if((nextBd.getTime()-time.getTime())>0){
+                console.log("Your birthday Duration days " +Math.ceil(((nextBd.getTime()-time.getTime())/(1000*60*60*24))));
+            }
+
+            else{
+                console.log("Your birthday Duration days " +(365+Math.ceil(((nextBd.getTime()-time.getTime())/(1000*60*60*24)))));
+            }
+
+        </script>
+        
+    </body>
+
+</html>

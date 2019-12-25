@@ -1,0 +1,54 @@
+<html>
+    <head>
+        
+        <title> JS chapter 15,16,17 </title>
+
+    </head>
+
+    <body>
+
+        <script type="text/javascript">
+
+            var cources=[];
+
+            var cource1=prompt("Enter 1st subject name");
+            cources.push(cource1);
+            var cource2=prompt("Enter 2nd subject name");
+            cources.push(cource2);
+            var cource3=prompt("Enter 3rd subject name");
+            cources.push(cource3);
+            var cource4=prompt("Enter 4th subject name");
+            cources.push(cource4);
+            var cource5=prompt("Enter 5th subject name");
+            cources.push(cource5);
+
+            alert(cources);
+
+            cource1=prompt("Cource 1 = "+cource1);
+            if(cource1!=""){
+                cources.splice(0,1,cource1);
+            }
+            cource2=prompt("Cource 2 = "+cource2);
+            if(cource2!=""){
+                cources.splice(1,1,cource2);
+            }
+            cource3=prompt("Cource 3 = "+cource3);
+            if(cource3!=""){
+                cources.splice(2,1,cource3);
+            }
+            cource4=prompt("Cource 4 = "+cource4);
+            if(cource4!=""){
+                cources.splice(3,1,cource4);
+            }
+            cource5=prompt("Cource 5 = "+cource5);
+            if(cource5!=""){
+                cources.splice(4,1,cource5);
+            }
+            
+            alert(cources);
+
+        </script>
+        
+    </body>
+
+</html>

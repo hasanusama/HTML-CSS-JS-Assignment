@@ -1,0 +1,59 @@
+<html>
+    <head>
+        
+        <title> JS chapter 10 to 14 </title>
+
+    </head>
+
+    <body>
+
+        <script type="text/javascript">
+
+		    var num1 = prompt("Enter first number:");
+            var num2 = prompt("Enter second number:");
+            var op= prompt('Enter operations to perform between two numbers, options are "+", "-", "*", "/" & "%"');
+            var ans;
+
+            if(op==="+"){
+
+                ans = parseInt(num1)+parseInt(num2);
+                alert(num1+"+"+num2+"="+ans);
+            }
+            else if(op==="-"){
+                ans = parseInt(num1)-parseInt(num2);
+                alert(num1+"-"+num2+"="+ans);
+            }
+            else if(op==="*"){
+                ans = parseInt(num1)*parseInt(num2);
+                alert(num1+"*"+num2+"="+ans);
+            }
+            else if(op==="/"){
+                ans = parseInt(num1)/parseInt(num2);
+                alert(num1+"/"+num2+"="+ans);
+            }
+            else if(op==="%"){
+                ans = parseInt(num1)%parseInt(num2);
+                alert(num1+"%"+num2+"="+ans);
+            }
+            else{
+                alert("Invalid data");
+            }
+            
+        </script>
+        
+        <script type="text/javascript">
+        
+            var sub1= parseInt(prompt("Enter number obtained in 1st Subject"));
+            var sub2= parseInt(prompt("Enter number obtained in 2nd Subject"));
+            var sub3= parseInt(prompt("Enter number obtained in 3rd Subject"));
+            var sub4= parseInt(prompt("Enter number obtained in 4th Subject"));
+            var sub5= parseInt(prompt("Enter number obtained in 5th Subject"));
+
+            var percentage=(sub1+sub2+sub3+sub4+sub5)/500*100;
+            alert("Percentage = "+percentage);
+
+        </script>
+        
+    </body>
+
+</html>

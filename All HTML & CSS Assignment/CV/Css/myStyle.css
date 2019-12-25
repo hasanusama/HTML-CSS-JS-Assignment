@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* myStyle.css */
+body {
+ background-color: #D3D3D3;
+ color: #000000;
+}
+h1 {
+ color: rgb(0,0,0);
+ font: fantasy;
+ font-weight: bold;
+}
+h3  {
+ color: #7272FE;
+ font: fantasy;
+ font-weight: bold;
+ text-decoration: underline;
+}
