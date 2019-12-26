@@ -34,15 +34,17 @@
 
             var timediff=time.getTime()-DOB.getTime();
             console.log("You are "+ Math.floor((timediff/(1000*60*60*24*365)))+ " Years old");
-            console.log("You age in days "+ Math.floor((timediff/(1000*60*60*24))));
-            console.log("You age in hours "+ Math.floor((timediff/(1000*60*60))));
+            console.log("Your age in days "+ Math.floor((timediff/(1000*60*60*24))));
+            console.log("Your age in hours "+ Math.floor((timediff/(1000*60*60))));
 
             var nextBd=new Date(time.getFullYear(),DOB.getMonth(),DOB.getDate());
 
-            if((nextBd.getTime()-time.getTime())>0){
+            if((nextBd.getMonth()==time.getMonth()) && (nextBd.getDate()==time.getDate())){
+                console.log("Hello " +name + " Today is your " + Math.floor((timediff/(1000*60*60*24*365)))  +" Birthday");
+            }
+            else if((nextBd.getTime()-time.getTime())>0){
                 console.log("Your birthday Duration days " +Math.ceil(((nextBd.getTime()-time.getTime())/(1000*60*60*24))));
             }
-
             else{
                 console.log("Your birthday Duration days " +(365+Math.ceil(((nextBd.getTime()-time.getTime())/(1000*60*60*24)))));
             }
