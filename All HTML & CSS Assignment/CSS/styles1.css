@@ -1,0 +1,24 @@
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40;
+    color: rgb(51, 50, 50);
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30;
+    text-shadow: 2px 2px 4px rgb(39, 39, 44);
+}
+h3{
+    font-family: Verdana;
+    color: rgb(41, 39, 39);
+}
+h3:first-letter{
+    font-size: 35;
+}
+p, li>a{
+    font-size: 20;
+    text-decoration: none;
+}
+li>a:hover{
+    color: blue;
+}
